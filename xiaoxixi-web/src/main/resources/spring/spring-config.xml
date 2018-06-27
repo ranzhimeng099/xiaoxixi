@@ -20,4 +20,5 @@
     <import resource="spring-config-service.xml"/>
 
     <import resource="spring-config-action.xml"/>
+
 </beans>

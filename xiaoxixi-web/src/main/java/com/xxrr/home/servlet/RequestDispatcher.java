@@ -82,7 +82,12 @@ public class RequestDispatcher extends HttpServlet {
     private String getActionName(HttpServletRequest request) {
         String uri = request.getRequestURI();
         if (uri != null && uri.length() > 1) {
-            return uri.substring(1);
+            Integer xxrrIndex = StringUtils.indexOf(uri, ".xxrr");
+            if (xxrrIndex < 0) {
+                return uri.substring(1);
+            } else {
+                return uri.substring(1, xxrrIndex);
+            }
         }
         return null;
     }
