@@ -30,6 +30,8 @@
         <spring.version>3.2.5.RELEASE</spring.version>
         <aspectj.version>1.8.9</aspectj.version>
         <fastjson.version>1.2.29</fastjson.version>
+        <mybatis.version>3.2.5</mybatis.version>
+        <mybatis.spring.version>1.2.3</mybatis.spring.version>
     </properties>
 
     <dependencies>
@@ -136,6 +138,18 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.version}</version>
+        </dependency>
+
         <!-- aspectj aop -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -148,7 +162,7 @@
         <!--<version>${aspectj.version}</version>-->
         <!--</dependency>-->
 
-        <!-- aspectj aop -->
+        <!-- netty -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
